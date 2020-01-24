@@ -23,7 +23,7 @@ public class MoradorController {
         this.condominioService = condominioService;
     }
 
-    @PostMapping("/moradore")
+    @PostMapping("/morador")
     public ResponseEntity<Morador> salvar(@RequestBody MoradorDTO dto) {
         Morador morador = condominioService.salvar(dto);
         return new ResponseEntity<>(morador, HttpStatus.CREATED);
